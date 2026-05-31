@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Car Rental Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🚗 Luxury Cars
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Cars</a></li>
+<li><a href="#">Booking</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Premium Car Rental</h1>
+
+<p>Choose Your Dream Car Today</p>
+
+<button onclick="scrollCars()">
+Explore Cars
+</button>
+
+</section>
+
+<section class="dashboard" id="cars">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e" alt="Audi">
+
+<div class="card-content">
+
+<h2>Audi R8</h2>
+
+<p>Model : 2025</p>
+
+<p class="price">₹6000000</p>
+
+<button class="book-btn"
+onclick="openForm('Audi R8')">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7" alt="BMW">
+
+<div class="card-content">
+
+<h2>BMW X5</h2>
+
+<p>Model : 2025</p>
+
+<p class="price">₹5500000</p>
+
+<button class="book-btn"
+onclick="openForm('BMW X5')">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Mercedes">
+
+<div class="card-content">
+
+<h2>Mercedes C-Class</h2>
+
+<p>Model : 2025</p>
+
+<p class="price">₹2700000</p>
+
+<button class="book-btn"
+onclick="openForm('Mercedes C-Class')">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="popup" id="popup">
+
+<div class="form-box">
+
+<h2 id="carTitle"></h2>
+
+<input
+type="text"
+id="customerName"
+placeholder="Customer Name">
+
+<input
+type="tel"
+id="mobileNo"
+placeholder="Mobile Number">
+
+<button
+class="confirm"
+onclick="confirmBooking()">
+Confirm Booking
+</button>
+
+<button
+class="close"
+onclick="closeForm()">
+Close
+</button>
+
+</div>
+
+</div>
+
+<div
+class="success"
+id="successMessage">
+</div>
+
+<footer>
+
+<h3>Luxury Car Rental Dashboard</h3>
+
+<p>Designed By Pratik</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
